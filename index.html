@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>SOMA DOM</title>
+</head>
+<body>
+   
+
+    <br><br><br>
+<div class="container">
+<div class="soma">
+<br>
+<h1>Somando com DOM</h1>
+
+<img class="home-image" src="https://download.logo.wine/logo/Windows_7/Windows_7-Logo.wine.png" alt="Win-Micro"> 
+<br>
+<input autocomplete="off" placeholder="Seu Nome" name="nome" id="nome" type="text">
+<br><br>
+<input placeholder="Número 1" name="valor1" id="valor1" type="number"> +
+
+<input  placeholder="Número 2" name="valor2" id="valor2" type="number">
+<br>
+<button class="btn" id="result" type="button" value="Somar" onclick="somar()">Ok</button>
+
+<p id="resp"></p>
+<br>
+<article>
+<div class="btns">
+
+<div class="inicial">
+<button class="pc">
+<i class="fa fa-windows" aria-hidden="true"></i>
+</button>
+<button class="pc">
+<i class="fa fa-folder-o" aria-hidden="true"></i>
+</button>
+<button class="pc">
+<i class="fa fa-chrome" aria-hidden="true"></i>
+</button>
+</div>
+
+<div class="final">
+<i class="fa fa-keyboard-o" aria-hidden="true"></i>
+
+<i class="fa fa-level-up" aria-hidden="true"></i>
+
+<i class="fa fa-wifi" aria-hidden="true"></i>
+
+<i class="fa fa-volume-up" aria-hidden="true"></i>
+
+</div>
+
+
+
+</div>
+
+</article>
+    </div>
+	</div>
+     <script>
+    function somar(){
+var v1 = document.getElementById('valor1');
+var v2 = document.querySelector('input#valor2');
+var resp = document.getElementById('resp');
+var n1 = Number(v1.value);
+var n2 = Number(v2.value);
+var nome = document.getElementById('nome').value
+var resultado = n1 + n2 ;
+
+resp.innerHTML = `${nome} seus números foram somados  ${n1} + ${n2} é igual a ${resultado}.` //placeholders 
+    }
+</script>
+
+<footer>
+     
+    <p>Desenvolvido em Html,Css e JS, Por Marco Marchi</p>
+     <p class="redes"> <a href="https://github.com/MarquinCss"> <i class="fa fa-github" aria-hidden="true"></i></a> 
+        
+        <a href="https://www.instagram.com/marcocarre29/"><i class="fa fa-instagram" aria-hidden="true"></i> </a>
+        
+        <a href="https://www.linkedin.com/in/marco-ant%C3%B4nio-marchi-carreiro-abb127260/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></p>
+</footer>
+</body>
+
+
+</html>

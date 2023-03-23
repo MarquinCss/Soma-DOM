@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: inherit;
+	  
+	
+}
+
+body{
+    background-color:black;
+
+}
+h1{
+	text-align:center;
+	
+}
+
+.container{
+	display:flex;
+	align-items:center;
+	justify-content:center;		
+}
+.soma{
+	overflow:hidden;
+	border-radius:50px;
+    background-image:url("https://www.newegg.com/insider/wp-content/uploads/windows_xp_bliss-wide.jpg");
+	background-position:center;
+	color:black;
+	width:500px;
+	height:500px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	
+}
+input {
+  font-family: inherit;
+  border:1px dashed black;
+  outline: 1px ridge black;
+  outline-offset: -4px;
+  background: hsl(0deg 0% 75%);
+  box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  outline: 1px dotted rgb(37, 37, 37);
+  outline-offset: -4px;
+  background: hsl(0deg 0% 75%);
+  box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+}
+
+button:active {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+}
+
+#resp{
+	font-size:17px;
+}
+
+article{
+	width:100%;
+	text-align:center;
+	height:290px;
+	background-color:cyan;
+	margin-bottom:26px;
+	
+} 
+
+.btns{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	gap:100px;
+	font-size:25px;
+	
+}
+
+.home-image{
+	width:200px;
+	height:200px;
+}
+
+.pc{
+	
+	text-align:center;
+	font-size:25px;
+	background-color: #a1e3ff8c;
+	border-radius:23px;
+	
+	}
+	
+.pc:hover{
+	  box-shadow: inset 50px 10px 10px #20d020a5;
+}
+
+   footer{
+	   margin-top:50px;
+       text-align: center;
+       font-size:23px;
+	   color:#fff;
+     
+   }
+
+   footer .redes{
+       font-size:30px;
+       color:#fff;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       gap:36px;
+       
+   }
+
+   a{
+       color:#fff;
+   }
+
+   i{
+       transition:2s;
+}
+
+ i:hover{
+       transform: rotate(12px);
+       transform: scale(1.5);
+       
+   }
+   
+   /* Definição da largura da barra de rolagem*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Cor do controlador da barra de rolagem  */
+::-webkit-scrollbar-thumb {
+    background-color:white;
+	border:4px solid #7de4deb5;
+}
+
+/* plano de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: #0acbdc;
+}
+
+/* Efeito hover no controlador */
+::-webkit-scrollbar-thumb:hover {
+    background: white;
+}
